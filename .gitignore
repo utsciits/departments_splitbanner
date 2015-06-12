@@ -1,0 +1,13 @@
+*.jpg
+*.png
+*.gif
+*.psd
+.DS_Store
+*.zip
+*.json
+*.gz
+*.log
+*.log.[0-9]
+*/images
+*.tmp
+*.txt
