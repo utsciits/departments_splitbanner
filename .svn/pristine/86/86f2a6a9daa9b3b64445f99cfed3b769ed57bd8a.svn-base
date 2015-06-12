@@ -1,0 +1,22 @@
+/*sidebar CTA*/
+
+/*.region-sidebar-second p {font-size:0.75em;}*/
+.region-sidebar-second h3 a  {
+  color: @blueDark;
+  /*font-size: 1em;*/
+  font-weight:bold;  
+}
+
+/*CTA*/
+.cta-wrap {
+position: relative;
+margin-bottom: 10px;
+
+}
+
+.cta-img {height: 138px;}
+
+.description {
+    background: @greenYellow;
+    padding: 10px; 
+}

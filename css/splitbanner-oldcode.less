@@ -1,0 +1,159 @@
+
+
+
+/* Mixins */
+.slideBtn {
+  display: block;
+  height: 399px;
+  position:absolute;
+  width: 40px;
+  z-index: 100;
+}
+
+.slideshowControl {
+  background: #333;
+  height: 40px;
+  padding: 10px 35%;
+  width: 30%;
+  z-index: 100;
+
+}
+
+.slideBtnMobile {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+
+/*
+
+----------------- Split Banner -------------------
+
+*/
+/* split banner mobile styles */
+
+#views_slideshow_cycle_main_slideshow_split_banner-block .views-slideshow-cycle-main-frame-row,
+#views_slideshow_cycle_main_slideshow_split_banner-block_1 .views-slideshow-cycle-main-frame-row {
+     @media @desktop  {
+      position: relative;
+      height: 240px !important;
+      width: 1000px !important;
+    }
+      @media @tablet {
+        width: 100% !important;
+        height: auto !important;
+      }
+    @media @mobile {
+      width: 98% !important;
+      margin: 0 .5em;
+      position: relative;
+    }
+}
+
+.views-slideshow-cycle-main-frame-row-item {
+  font-family: "Aller", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: white;
+}
+.views-slideshow-cycle-main-frame-row-item .split_banner_title {
+  @media @desktop  {
+    font-size: 32px;
+    text-shadow: 1px 1px #000;
+    border-bottom: none;
+    color: #fff;
+  }
+  @media @mobile {
+    color: #fff; 
+    }
+}
+
+.views-slideshow-cycle-main-frame-row-item .split_banner_teaser {
+  @media @desktop  {
+    font-size: 18px;
+    text-shadow: 1px 1px #000;
+    color: #fff;
+  }
+  @media @mobile {
+    color: #fff; 
+    }
+}
+
+
+.split_banner_image {
+  @media @desktop {
+    float: right;
+  }
+}
+.split_banner_content_wrapper {
+    
+@media @desktop {
+    background: transparent url(images/inner-shadow.png) no-repeat;
+    bottom: 0;
+    float: left;
+    height: 222px;
+    left: 0;
+    padding: 40px 0 0 40px;
+    position: relative;
+    width: 460px;
+    
+  }
+
+  @media @tablet {
+    width: 50%;
+  }
+
+  @media @mobile {
+      float: none;
+      padding: 1em 0 0 1em;
+      width: 99%;
+      background: #4c6687;
+    }
+
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_0,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_0 {
+  background-color: #6cace4;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_1,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_1 {
+  background-color: #7a9a01;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_2,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_2 {
+  background-color: #a192b2;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_3,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_3 {
+  background-color: #d38235;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_4,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_4 {
+  background-color: #6cace4;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_5,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_5 {
+  background-color: #7a9a01;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_6,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_6 {
+  background-color: #a192b2;
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_7,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_7 {
+  background-color: #d38235;
+}
+#views_slideshow_cycle_main_slideshow_split_banner-block .views-slideshow-controls-bottom,
+#views_slideshow_cycle_main_slideshow_split_banner-block_1 .views-slideshow-controls-bottom {
+      @media @mobile {
+        position: absolute;
+        top: 200px;
+        right: 20px;
+        z-index: 100;
+    }
+  }
+.split_banner_title,
+.split_banner_teaser {
+  margin-right: 20px;
+}
+
+

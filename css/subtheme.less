@@ -1,0 +1,92 @@
+
+
+
+//media queries - breakpoints
+
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile:      ~"only screen and (max-width: 500px)";
+@tabletandmobile:    ~"only screen and (min-width: 0px) and (max-width: 999px)";
+@tablet:    ~"only screen and (min-width: 750px) and (max-width: 999px)";
+@desktop:     ~"only screen and (min-width: 1000px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+@languagemobile:  ~"only screen and (max-width: 599px)";
+
+
+
+/* split banner styles */
+
+.split_banner_image img {
+
+  @media @mobile { width: 100%}
+}
+
+.split_banner_image {
+    float: right;
+    
+    @media @tabletandmobile { float: none; margin: 0 .5em;}
+   
+}
+
+.split_banner_content_wrapper {
+  height: 240px;
+  float:left;
+  background: black;
+  width: 500px;
+  
+  h2, a, p {
+  font-family: "Aller", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration:none;
+  bottom:0;
+  }
+
+  @media @tabletandmobile {
+    float: none;
+    background: #4c6687;
+    width:auto;
+    max-width:500px;
+    height: auto;
+    margin: 0 .5em;
+    margin-top:-3px;
+  }
+
+}
+
+.view-slideshow-split-banner a:hover { text-decoration:none; }
+.view-slideshow-split-banner > div > div {  position: relative;}
+
+.split_banner_title, .split_banner_teaser {
+    margin: 0 10px
+}
+.split_banner_title { 
+    padding-top: 10px;
+  
+  @media @tabletandmobile {
+    font-size: 1.6rem;
+    font-weight: 700;  
+  }
+}
+
+.split_banner_teaser { 
+    padding: 1em 0px 1.5em;
+    
+    @media @tabletandmobile {
+    font-size: 1.4rem;
+  }
+}
+
+.split-banner-block .views-slideshow-controls-bottom {
+    @media @tabletandmobile {
+    position: absolute;
+    z-index: 100;
+    top: 210px;
+    left: 25px;
+    }
+
+    @media @mobile {top: 140px}
+}
+
+

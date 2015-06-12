@@ -1,0 +1,32 @@
+/*sidebar CTA*/
+
+/*.region-sidebar-second p {font-size:0.75em;}*/
+.region-sidebar-second h3 a,.region-sidebar-second h3  {
+  color: @blueDark;
+  .font-size(16px);
+  font-weight:bold;  
+}
+
+.region-sidebar-second p {
+	.font-size(12px);
+}
+
+/*CTA*/
+.cta-wrap {
+	position: relative;
+	margin-bottom: 10px;
+
+}
+
+.cta-img {height: 138px;}
+
+.description {
+    background: @greenYellow;
+    padding: 10px; 
+}
+
+.view-cta-homepage h3 a {color:@blueDark;}
+.view-cta-homepage h3 a:hover {
+	color:@blueDesaturated;
+	text-decoration: none;
+}

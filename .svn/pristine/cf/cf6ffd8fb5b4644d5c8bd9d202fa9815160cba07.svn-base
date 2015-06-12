@@ -1,0 +1,5 @@
+.boldUppercase {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}

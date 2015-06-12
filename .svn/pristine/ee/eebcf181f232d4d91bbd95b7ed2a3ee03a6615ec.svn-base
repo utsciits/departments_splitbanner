@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Nothing</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>What</h1>
+      <h2>Is this?</h2>
+    </header>
+    <div role="main">
+      <p>So this is a link to <a href="http://lycos.com/">Lycos</a> of all things.</p>
+      <p>Remember Lycos? Yeah.</p>
+    </div>
+  </div>
+</body>
+</html>

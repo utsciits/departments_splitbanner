@@ -1,0 +1,36 @@
+// // All-col container
+// .container {
+//   width: @maxRowWidth;
+// }
+
+// // Single-col sidebars
+// .sidebar {
+//   width: @maxColumnWidth;
+// }
+
+///////////////////////////////
+// Shared style mixins
+
+// Teasers
+.teaser {
+  .media-box();
+  //DEBUG
+  margin-bottom: @teaserMarginHeight;
+  margin-top: @teaserMarginHeight;
+  
+  // Title with separator underneath it
+  .article-title {
+    border-bottom: 1px solid @teaserHeaderSeparatorColor;
+    margin-bottom: @teaserHeaderSeparatorHeightUnder;
+    margin-left: 230px;
+    padding-bottom: @teaserHeaderSeparatorHeightOver;
+  }
+  // HACKY: Summary text in teasers may or may not be wrapped in <p>
+  // to have consistent space between summary text and the separator
+  // we'll null the margin of the first <p> and rely on .article-title's
+  // margin-bottom.
+  // NOTE: no first-of-type pseudo in IE<9
+  p:first-of-type {
+    margin-top: 0;
+  }
+}

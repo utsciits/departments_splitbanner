@@ -1,0 +1,21 @@
+///////////////////////////////
+// Colors
+
+// Without-roles
+// Avoid using these directly; instead, assign them to vars with roles
+@blueDark:          #002554; // UofT Dark Blue, from UTSC style guide
+@blueDesaturated:   #4d6d92; // As seen in Admissions
+@blueLight:         #6cace4; // Blue, from UTSC styleguide
+@greenDark:         #7a9a01; // Dark Green from UTSC styleguide
+@greenLime:         #bfb800; // Lime from UTSC styleguide
+@greenLight:		#ddd8a9;
+@greyDark:          #333;
+@greyMid:           #666;
+@greyLight:         #ccc;
+@greyHighLight:     #595959; // Pre-header Highliting color
+@greyReddish:       #83786f; // As seen in Admissions
+@orange:            #d38235; // Orange from UTSC styleguide
+@purpleDesaturated: #a192b2; // Purple from UTSC styleguide
+@whiteOff:          #f4f4f4; // As seen in Admissions
+@white:             #fff;
+@beigeLight:        #e6e4e2; // As seen in Admissions

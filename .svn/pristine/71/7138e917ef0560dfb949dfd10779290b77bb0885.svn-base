@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 15px;
+  font-size: 1.5rem;
+  background-color: #f4f4f4;
+  color: #333333;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #002554;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: normal;
+}
+a {
+  color: #4d6d92;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #002554;
+  text-decoration: underline;
+}
+a:visited {
+  color: #334860;
+}
+.container {
+  width: 1000px;
+}
+.sidebar {
+  width: 230px;
+}
+.teaser {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid red;
+}
+.teaser .article-content {
+  margin: 10px;
+}
+.teaser .field-type-image {
+  float: left;
+  margin-right: 10px;
+}
+.teaser .article-title {
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.teaser p:first-of-type {
+  margin-top: 0;
+}
+.field-type-image img {
+  -webkit-box-shadow: 0px 0px 10px #666666;
+  -moz-box-shadow: 0px 0px 10px #666666;
+  box-shadow: 0px 0px 10px #666666;
+  border-color: #ffffff;
+  border-width: 5px;
+  border-style: solid;
+}
+.teaser .field-type-image img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+.field-name-field-image img,
+.field-name-field-list-page-image img,
+.field-name-field-page-image img {
+  width: 99%;
+}
+.teaser .field-name-field-building,
+.teaser .field-name-field-building div,
+.teaser .field-name-field-room,
+.teaser .field-name-field-room div {
+  display: inline;
+}
+.field-name-field-page-list .odd {
+  background-color: #e6e4e2;
+}
+.field-name-field-person-list > .field-items > .field-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 480px;
+}
+.field-name-field-person-list > .field-items > .even {
+  margin-right: 20px;
+}

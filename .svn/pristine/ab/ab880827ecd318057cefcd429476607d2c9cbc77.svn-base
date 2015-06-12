@@ -1,0 +1,39 @@
+/* Page */
+/* Header */
+#logo {
+  margin: 0 10px;
+}
+#page > header > hgroup {
+  margin: 0 10px;
+}
+/* Page title */
+/* Regions */
+/* Sidebars */
+/* Footer - the main page footer only */
+/* Feed icons */
+/* Search results list. */
+/* Aggregator */
+/* Maintenance page */
+.maintenance-page #skip-link {
+  position: absolute;
+  top: -99em;
+}
+.maintenance-page footer {
+  margin: 10px 0 0;
+}
+.maintenance-page footer a {
+  text-decoration: none;
+  color: #ccc;
+}
+/* Prevent overflowing content */
+header[role=banner],
+.content-inner,
+.nav,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-secondary-content,
+.region-tertiary-content,
+.region-footer {
+  overflow: visible;
+  word-wrap: break-word;
+}
