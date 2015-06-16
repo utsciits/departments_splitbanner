@@ -4,8 +4,11 @@
     width: 100%;
   }
 }
-.split_banner_image {
-  float: right;
+@media only screen and (min-width: 1000px) {
+  .split_banner_image {
+    float: right;
+    height: 240px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
   .split_banner_image {
@@ -16,7 +19,7 @@
 .split_banner_content_wrapper {
   height: 240px;
   float: left;
-  background: black;
+  padding: 0;
   width: 500px;
 }
 .split_banner_content_wrapper h2,
@@ -26,6 +29,11 @@
   color: white;
   text-decoration: none;
   bottom: 0;
+}
+@media only screen and (min-width: 1000px) {
+  .split_banner_content_wrapper {
+    background: transparent url(images/inner-shadow.png) no-repeat;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
   .split_banner_content_wrapper {
@@ -44,25 +52,42 @@
 .view-slideshow-split-banner > div > div {
   position: relative;
 }
-.split_banner_title,
-.split_banner_teaser {
-  margin: 0 10px;
+@media only screen and (min-width: 1000px) {
+  .split_banner_title,
+  .split_banner_teaser {
+    margin: 0 30px;
+    text-shadow: 1px 1px #000;
+  }
 }
-.split_banner_title {
-  padding-top: 10px;
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .split_banner_title,
+  .split_banner_teaser {
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .split_banner_title {
+    padding-top: 30px;
+    font-size: 2.4rem;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
   .split_banner_title {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    padding-top: 10px;
     font-weight: 700;
   }
 }
-.split_banner_teaser {
-  padding: 1em 0px 1.5em;
+@media only screen and (min-width: 1000px) {
+  .split_banner_teaser {
+    padding: 1em 0px 15px;
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
   .split_banner_teaser {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
@@ -78,3 +103,53 @@
     top: 140px;
   }
 }
+/* colourful backgrounds */
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_0,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_0 {
+    background-color: #6cace4;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_1 .split_banner_content_wrapper {
+    background-color: #7a9a01;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_2 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_2 .split_banner_content_wrapper {
+    background-color: #a192b2;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_3 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_3 .split_banner_content_wrapper {
+    background-color: #d38235;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_4 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_4 .split_banner_content_wrapper {
+    background-color: #6cace4;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_5 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_5 .split_banner_content_wrapper {
+    background-color: #7a9a01;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_6 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_6 .split_banner_content_wrapper {
+    background-color: #a192b2;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #views_slideshow_cycle_div_slideshow_split_banner-block_7 .split_banner_content_wrapper,
+  #views_slideshow_cycle_div_slideshow_split_banner-block_1_7 .split_banner_content_wrapper {
+    background-color: #d38235;
+  }
+}
+/* colourful backgrounds */

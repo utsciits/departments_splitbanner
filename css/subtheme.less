@@ -14,7 +14,7 @@
 @desktop-xl:  ~"only screen and (min-width: 1129px)";
 @languagemobile:  ~"only screen and (max-width: 599px)";
 
-
+@my30px: 30px;
 
 /* split banner styles */
 
@@ -24,17 +24,19 @@
 }
 
 .split_banner_image {
-    float: right;
-    
+    @media @desktop {
+      float: right;
+      height: 240px;
+    }
     @media @tabletandmobile { float: none; margin: 0 .5em;}
    
 }
 
 .split_banner_content_wrapper {
-  height: 240px;
-  float:left;
-  background: black;
-  width: 500px;
+    height: 240px;
+    float:left;
+    padding: 0;
+    width: 500px;
   
   h2, a, p {
   font-family: "Aller", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -42,7 +44,10 @@
   text-decoration:none;
   bottom:0;
   }
-
+  
+  @media @desktop {
+  background: transparent url(images/inner-shadow.png) no-repeat;}
+    
   @media @tabletandmobile {
     float: none;
     background: #4c6687;
@@ -59,22 +64,36 @@
 .view-slideshow-split-banner > div > div {  position: relative;}
 
 .split_banner_title, .split_banner_teaser {
-    margin: 0 10px
+    @media @desktop {
+    margin: 0 @my30px;
+    text-shadow: 1px 1px #000;
+    }
+     @media @tabletandmobile {
+      margin-left: @my30px/2;
+     }
 }
 .split_banner_title { 
-    padding-top: 10px;
-  
+    @media @desktop {
+    padding-top: @my30px;
+    font-size: 2.4rem;
+    }
+
   @media @tabletandmobile {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    padding-top: @my30px/3;
     font-weight: 700;  
   }
 }
 
 .split_banner_teaser { 
-    padding: 1em 0px 1.5em;
+    @media @desktop {
+    padding: 1em 0px @my30px/2;
+    font-size: 1.8rem;
+    }
     
     @media @tabletandmobile {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    padding-bottom: @my30px/2;
   }
 }
 
@@ -90,3 +109,39 @@
 }
 
 
+
+
+/* colourful backgrounds */
+#views_slideshow_cycle_div_slideshow_split_banner-block_0,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_0 {
+  @media @desktop { background-color: #6cace4 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_1 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_1 .split_banner_content_wrapper{
+  @media @desktop { background-color: #7a9a01 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_2 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_2 .split_banner_content_wrapper{
+  @media @desktop { background-color: #a192b2 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_3 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_3 .split_banner_content_wrapper{
+  @media @desktop { background-color: #d38235 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_4 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_4 .split_banner_content_wrapper{
+  @media @desktop { background-color: #6cace4 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_5 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_5 .split_banner_content_wrapper{
+  @media @desktop { background-color: #7a9a01 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_6 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_6 .split_banner_content_wrapper{
+  @media @desktop { background-color: #a192b2 }
+}
+#views_slideshow_cycle_div_slideshow_split_banner-block_7 .split_banner_content_wrapper,
+#views_slideshow_cycle_div_slideshow_split_banner-block_1_7 .split_banner_content_wrapper{
+  @media @desktop { background-color: #d38235 }
+}
+/* colourful backgrounds */
