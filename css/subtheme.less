@@ -13,6 +13,8 @@
 @desktop:     ~"only screen and (min-width: 1000px)";
 @desktop-xl:  ~"only screen and (min-width: 1129px)";
 @languagemobile:  ~"only screen and (max-width: 599px)";
+@interm:  ~"only screen and (min-width: 600px) and (max-width: 799px)";
+
 
 @my30px: 30px;
 
@@ -20,7 +22,7 @@
 
 .split_banner_image img {
 
-  @media @mobile { width: 100%}
+  @media @tabletandmobile { width: 100%; max-width: 500px;}
 }
 
 .split_banner_image {
@@ -37,7 +39,7 @@
     float:left;
     padding: 0;
     width: 500px;
-  
+    
   h2, a, p {
   font-family: "Aller", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: white;
@@ -56,6 +58,7 @@
     height: auto;
     margin: 0 .5em;
     margin-top:-3px;
+    padding-top: 50px;
   }
 
 }
@@ -97,15 +100,33 @@
   }
 }
 
-.split-banner-block .views-slideshow-controls-bottom {
-    @media @tabletandmobile {
+
+.views-slideshow-controls-bottom {
+  @media @tabletandmobile {
     position: absolute;
     z-index: 100;
-    top: 210px;
-    left: 25px;
+    top: auto; /* overrides departments theme */
+    right: auto; /* overrides departments theme */
+    top: 240px; /* re-adjust the position of paging buttons */
     }
+    
+    @media @tablet {
+      margin-left: 50%;
+    }
+    @media @interm {
+      margin-left: 50%;
+    }
+  }
 
-    @media @mobile {top: 140px}
+#widget_pager_bottom_slideshow_split_banner-block {
+  @media @tabletandmobile {
+  float: none;
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left: -50%;
+  }
+
 }
 
 
@@ -134,3 +155,33 @@
 }
 
 /* colourful backgrounds */
+
+/*height repositions the title of main content to avoid gap or overlap with the banner on mobile devices*/
+
+
+.front .region-secondary-content {
+    @media @tabletandmobile {
+      max-width:500px
+      }
+
+    .view {
+    @media @tabletandmobile {
+      height:340px
+      }
+    }
+}
+
+.views-slideshow-pager-field-item {
+    @media @tabletandmobile {width: 40px;}
+  }
+.views-content-counter {
+  @media @tabletandmobile {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    }
+}
+
+.main-content {
+  @media @tabletandmobile {margin-right:0;}
+  } /*departments needs 2% right margin for mobile but not this subtheme*/

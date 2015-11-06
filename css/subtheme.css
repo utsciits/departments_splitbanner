@@ -1,7 +1,8 @@
 /* split banner styles */
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 999px) {
   .split_banner_image img {
     width: 100%;
+    max-width: 500px;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -44,6 +45,7 @@
     height: auto;
     margin: 0 .5em;
     margin-top: -3px;
+    padding-top: 50px;
   }
 }
 .view-slideshow-split-banner a:hover {
@@ -91,16 +93,34 @@
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
-  .split-banner-block .views-slideshow-controls-bottom {
+  .views-slideshow-controls-bottom {
     position: absolute;
     z-index: 100;
-    top: 210px;
-    left: 25px;
+    top: auto;
+    /* overrides departments theme */
+    right: auto;
+    /* overrides departments theme */
+    top: 240px;
+    /* re-adjust the position of paging buttons */
   }
 }
-@media only screen and (max-width: 500px) {
-  .split-banner-block .views-slideshow-controls-bottom {
-    top: 140px;
+@media only screen and (min-width: 750px) and (max-width: 999px) {
+  .views-slideshow-controls-bottom {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .views-slideshow-controls-bottom {
+    margin-left: 50%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  #widget_pager_bottom_slideshow_split_banner-block {
+    float: none;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    margin-left: -50%;
   }
 }
 /* colourful backgrounds */
@@ -129,3 +149,32 @@
   }
 }
 /* colourful backgrounds */
+/*height repositions the title of main content to avoid gap or overlap with the banner on mobile devices*/
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .front .region-secondary-content {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .front .region-secondary-content .view {
+    height: 340px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .views-slideshow-pager-field-item {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .views-content-counter {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .main-content {
+    margin-right: 0;
+  }
+}
+/*departments needs 2% right margin for mobile but not this subtheme*/
