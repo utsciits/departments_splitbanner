@@ -108,10 +108,21 @@
   .views-slideshow-controls-bottom {
     margin-left: 50%;
   }
+  .views-slideshow-controls-bottom .bullet-wrapper {
+    margin-left: -50%;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
   .views-slideshow-controls-bottom {
     margin-left: 50%;
+  }
+  .views-slideshow-controls-bottom .bullet-wrapper {
+    margin-left: -50%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .views-slideshow-controls-bottom .bullet-wrapper {
+    margin-left: -50%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 999px) {
@@ -120,7 +131,6 @@
     margin-top: 10px;
     display: inline-block;
     position: relative;
-    margin-left: -50%;
   }
 }
 /* colourful backgrounds */
@@ -178,3 +188,19 @@
   }
 }
 /*departments needs 2% right margin for mobile but not this subtheme*/
+/* flash object style for AACC*/
+.large_cont_1,
+.large_cont_1 div {
+  margin: 0;
+  padding: 0;
+}
+.large_cont_1 {
+  position: relative;
+}
+.large_cont_1 > div {
+  top: 0;
+  margin-left: -120px;
+}
+iframe {
+  border: none;
+}

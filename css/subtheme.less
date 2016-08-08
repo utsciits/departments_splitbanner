@@ -112,19 +112,30 @@
     
     @media @tablet {
       margin-left: 50%;
+      .bullet-wrapper {
+        margin-left: -50%;
+      }
     }
     @media @interm {
       margin-left: 50%;
+      .bullet-wrapper {
+        margin-left: -50%;
+      }
+    }
+    @media @languagemobile {
+      .bullet-wrapper {
+        margin-left: -50%;
+      }
     }
   }
 
+  
 #widget_pager_bottom_slideshow_split_banner-block {
   @media @tabletandmobile {
   float: none;
   margin-top: 10px;
   display: inline-block;
   position: relative;
-  margin-left: -50%;
   }
 
 }
@@ -185,3 +196,20 @@
 .main-content {
   @media @tabletandmobile {margin-right:0;}
   } /*departments needs 2% right margin for mobile but not this subtheme*/
+
+/* flash object style for AACC*/
+.large_cont_1,
+.large_cont_1 div {
+  margin: 0;
+  padding: 0;
+}
+.large_cont_1 {
+  position: relative;
+}
+.large_cont_1 > div {
+  top: 0;
+  margin-left: -120px;
+}
+iframe {
+  border: none;
+}
